@@ -35,6 +35,11 @@ body {
     /* width: 100vw; */
 }
 
+h2 {
+    display: block;
+    margin: auto;
+}
+
 div {
     background-color: #90ee90;
 }
