@@ -1,0 +1,107 @@
+<!Doctype <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href=".\assets\css\reset.css">
+    <link rel="stylesheet" type="text/css" href=".\assets\css\style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+    <script>
+        $('.smooth').on('click', function () {
+            $.smoothScroll({
+                scrollElement: $('body'),
+                scrollTarget: '#' + this.id
+            });
+
+            return false;
+        });
+    </script>
+    <title>KC Microgreens</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a href="index.html" class="nav-link navHome"><img src="./assets/images/logo.jpg" class="logo" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-stretch" style="justify-content: flex-end;" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link navHome" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navHome" href="microgreens.html">Microgreens 101</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navHome" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navHome" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="imageContainer">
+                        <img src="./assets/images/microgreenAssortment.jpg" alt="Our stall at the Overland Park Farmer's Market">
+                    </div>
+                    <div class="info">
+                        <p>What are micro-greens? You aren’t alone if you are asking that question. Micro-greens are really
+                            small versions of plants you already know and love (well even if you don’t love some of their
+                            grown up counterparts, you may still love micros). They are somewhere between a sprout and a
+                            “baby” green. Micro greens are high in nutrient density. Micro-greens can pack a lot of flavor
+                            in a small package. They are versatile and can be added to lots of things. They are beautiful!
+                            They are quick and easy to grow if you want to grow your own. Micro-greens are new (new enough
+                            that they aren’t in any local grocery stores), growing in popularity and some would call them
+                            a super food because they contain higher nutrient levels than their grown up counterparts.
+                            <br>
+                            <br> There is a lot of misinformation and a bit of a grey area surrounding the topic of micro-greens
+                            and what to call them. I’ve seen micro-greens also referred to as sprouts, shoots, and sprouted
+                            greens. I’ve seen sprouts referred to as micro-greens or leafy sprouts. Confusing, I know. What
+                            ever you call them, I want you to know the difference between micro-greens and sprouts. Micro-greens
+                            are not sprouts as I would define sprouts. Sprouts are germinated seeds, usually grown without
+                            medium, kept moist through the growing process. Micro-greens differ from sprouts in a number
+                            of ways. Micro-greens are grown in a medium (seed starting mix, soil, grow mat, etc). Micro-greens
+                            are usually grown a little longer than sprouts. Sprouts are usually not grown past the cotyledon
+                            (those first leaves that appear when a seed germinates) stage. Micro-greens are often (but not
+                            always) grown to the first set of true leaves (the next set that follows the cotyledons). Something
+                            grown even longer, I would call a shoot.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-2 sidebarGroup">
+            <div class="sidebar">
+                <h2>Shopping Cart Placeholder</h2>
+            </div>
+            <div class="sidebar">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/Food-Life-Joy-420814524710953/" target="blank"><img src="./assets/images/facebook.png" class="social"></a>
+                <a href="https://twitter.com/foodlifejoy" target="blank"><img src="./assets/images/twitter.png" class="social"></a>
+                <a href="https://www.instagram.com/foodlifejoy/?hl=en" target="blank"><img src="./assets/images/instagram.png" class="social"></a>
+            </div>
+            <div class="sidebar">
+                <h2>Upcoming Events</h2>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <h6 style="text-align: center;"> Copyright © 2017
+                <a href="http://dantangen.com" target="blank" class="footerText">Dan Tangen</a>
+            </h6>
+        </div>
+    </footer>
+</body>
+
+</html>
