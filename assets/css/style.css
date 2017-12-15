@@ -4,19 +4,21 @@ nav {
 	left: 0px;
     z-index: 1;
     display: inline-block;
+    font-family: 'Noto Sans', sans-serif !important;
 }
 
 .navbar {
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
     background-color: white;
     width: 100vw;
 }
 
 .logo {
     height: 40px;
-    width: 50px;
+    width: 40px;
     margin: 0px;
     padding: 0px;
+    border-radius: 50%;
 }
 
 #navbarNav {
@@ -25,6 +27,12 @@ nav {
 
 body {
     background-color: #90ee90 !important;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Noto Sans', sans-serif !important;
+    /* width: 100vw; */
 }
 
 div {
@@ -34,6 +42,8 @@ div {
 .imageContainer {
     height: 500px;
     width: 500px;
+    display: block;
+    margin: auto;
 }
 
 img {
@@ -41,6 +51,12 @@ img {
     width: 100%;
     padding: 5px;
     margin: 5px;
+    /* display: block; */
+    margin: auto;
+}
+
+.mainImage {
+    display: block;
 }
 
 .sidebar {
@@ -53,8 +69,6 @@ img {
 
 .sidebarGroup {
     background-color: rgb(21, 158, 67);
-    border-top: 2px solid green;
-    border-left: 2px solid green;
 }
 
 p {
@@ -64,6 +78,11 @@ p {
 .social {
     height: 70px;
     width: 70px;
+}
+
+.sidebarLink {
+    text-decoration: none;
+    color: black;
 }
 
 .footer {
