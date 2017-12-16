@@ -27,6 +27,7 @@ nav {
 
 a {
     color: white !important;
+    text-decoration: none !important;
 }
 
 body {
@@ -84,6 +85,10 @@ img {
     height: 1500px;
 }
 
+.paypalbutton {
+    background-color: rgb(21, 158, 67) !important;
+}
+
 p {
     padding: 2px;
 }
@@ -91,6 +96,7 @@ p {
 .social {
     height: 70px;
     width: 70px;
+    text-decoration: none;
 }
 
 .sidebarLink {
