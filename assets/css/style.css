@@ -9,7 +9,7 @@ nav {
 
 .navbar {
     /* border-bottom: 2px solid black; */
-    background-color: white;
+    background-color: black;
     width: 100vw;
 }
 
@@ -22,7 +22,11 @@ nav {
 }
 
 #navbarNav {
-    background-color: white;
+    background-color: black;
+}
+
+a {
+    color: white !important;
 }
 
 body {
@@ -37,6 +41,11 @@ body {
 h2 {
     display: block;
     margin: auto;
+    color: white !important;
+}
+
+li {
+    color: white !important;
 }
 
 div {
