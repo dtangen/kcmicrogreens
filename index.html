@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Reset CSS -->
     <link rel="stylesheet" type="text/css" href=".\assets\css\reset.css">
+    <!-- Style CSS -->
     <link rel="stylesheet" type="text/css" href=".\assets\css\style.css">
+    <!-- Animate CSS -->
     <link rel="stylesheet" href=".\assets/css/animate.css">
+    <!-- Hover CSS -->
     <link rel="stylesheet" href=".\assets/css/hover.css">
+    <!-- Boostrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Smooth Scroll -->
     <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-
+    <!-- Paypal API -->
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <!-- Script for smooth scrolling -->
     <script>
         $('.smooth').on('click', function () {
             $.smoothScroll({
@@ -29,7 +38,9 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <!-- Logo -->
         <a href="index.html" class="nav-link navHome">
             <img src="./assets/images/logo.jpg" class="logo hvr-bounce-in" alt="logo">
         </a>
@@ -38,7 +49,9 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-stretch" style="justify-content: flex-end;" id="navbarNav">
+            <!-- Heading -->
             <h2>KC Microgreens - Your source for fresh, locally grown microgreens</h2>
+            <!-- Links to other parts of the website -->
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link navHome" href="products.html">Products</a>
@@ -58,7 +71,9 @@
             </ul>
         </div>
     </nav>
+    <!-- Row that contains the main div + sidebar -->
     <div class="row">
+        <!-- Main Div -->
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
@@ -96,21 +111,25 @@
 
             </div>
         </div>
+        <!-- Sidebar: Contains divs for the shopping cart, social media icons, calendar, partners, and the blog -->
         <div class="col-md-2 sidebarGroup">
+            <!-- Shopping Cart -->
             <div class="sidebar">
             </div>
+            <!-- Social Media -->
             <div class="sidebar">
                 <h2>Follow Us</h2>
-                <a href="https://www.facebook.com/Food-Life-Joy-420814524710953/" target="blank">
+                <a href="https://www.facebook.com/Food-Life-Joy-420814524710953/ " class="sidebarSocial" target="blank">
                     <img src="./assets/images/facebook.png" class="social hvr-bounce-in">
                 </a>
-                <a href="https://twitter.com/foodlifejoy" target="blank">
+                <a href="https://twitter.com/foodlifejoy" class="sidebarSocial" target="blank">
                     <img src="./assets/images/twitter.png" class="social hvr-bounce-in">
                 </a>
-                <a href="https://www.instagram.com/foodlifejoy/?hl=en" target="blank">
+                <a href="https://www.instagram.com/foodlifejoy/?hl=en" class="sidebarSocial" target="blank">
                     <img src="./assets/images/instagram.png" class="social hvr-bounce-in">
                 </a>
             </div>
+            <!-- Calendar -->
             <div class="sidebar">
                 <h2>Upcoming Events</h2>
                 <ul>
@@ -120,11 +139,13 @@
                     <li>January 1: New Year's Day</li>
                 </ul>
             </div>
+            <!-- Partners -->
             <div class="sidebar">
                 <a href="https://koenigandhill.com/product-category/microgreens/" target="blank" class="sidebarLink">
                     <h6>Place an order through our partners at Koenig and Hill</h6>
                 </a>
             </div>
+            <!-- Blog -->
             <div class="sidebar">
                 <a href="http://foodlifejoy.com/" target="blank" class="sidebarLink">
                     <h6>Read our blog</h6>
@@ -132,6 +153,7 @@
             </div>
         </div>
     </div>
+    <!-- Footer -->
     <footer>
         <div class="footer">
             <h6 style="text-align: center;"> Copyright © 2017
