@@ -77,6 +77,56 @@ img {
     display: block;
 }
 
+.product {
+    margin: 10px;
+}
+.productImage {
+    width: 275px;
+    height: 275px;
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .productDiv {
+      width: 275px;
+      height: 425px;
+      text-align: center;
+  }
+
+  .productName {
+      font-size: 1em;
+      padding: 5px;
+      height: 45px;
+  }
+
+  .flex-item {
+    background: white;
+    padding: 5px;
+    width: 275px;
+    height: 275px;
+    margin-top: 10px;
+    
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
+
 .sidebar {
     border-bottom: 1px solid black;
     margin: 5px;

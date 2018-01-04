@@ -58,7 +58,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
-
+                    <div id='firstProductPage'></div>
                 </div>
 
             </div>
@@ -107,5 +107,76 @@
         </div>
     </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<script type="text/babel">
+    class App extends React.Component {
+        render() {
+            return (
+            <div className="flex-container">
+                <div className="productDiv">
+                    <img src="./assets/images/arugulamicrogreens-600x600.jpg" className="productImage flex-item"></img>
+                    <h4 className="productName">Arugala Microgreens</h4>
+                    <h6 className="price">$4.50</h6>
+                    <button className="buttonInfo">Add to Cart</button>
+                </div>
+                <div className="productDiv">
+                    <img src="./assets/images/broccolimicrogreens.jpg" className="productImage flex-item"></img>
+                    <h4 className="productName">Broccoli Microgreens</h4>
+                    <h6 className="price">$4.50</h6>
+                    <button className="buttonInfo">Add to Cart</button>
+                </div>
+                <div className="productDiv">
+                    <img src="./assets/images/chinaroseradishmicrogreens-300x300.jpg" className="productImage flex-item"></img>
+                    <h4 className="productName">China Rose Radish Microgreens</h4>
+                    <h6 className="price">$4.50</h6>
+                    <button className="buttonInfo">Add to Cart</button>
+                </div>
+                <div className="productDiv">
+                    <img src="./assets/images/goldenacrecabbagemicrogreens-300x300.jpg" className="productImage flex-item"></img>
+                    <h4 className="productName">Golden Acre Cabbage Microgreens</h4>
+                    <h6 className="price">$4.50</h6>
+                    <button className="buttonInfo">Add to Cart</button>
+                </div>
+                <div className="productDiv">
+                    <img src="./assets/images/microgreenskit-300x300.jpg" className="productImage flex-item"></img>
+                    <h4 className="productName">Grow-Your-Own Microgreens Kit</h4>
+                    <h6 className="price">$6.00</h6>
+                    <button className="buttonInfo">Add to Cart</button>
+                </div>
+                <div className="productDiv">
+                    <img src="./assets/images/mildmixmicrogreens-300x300.jpg" className="productImage flex-item"></img>
+                    <h4 className="productName">Mild Mix Microgreens</h4>
+                    <h6 className="price">$4.50</h6>
+                    <button className="buttonInfo">Add to Cart</button>
+                </div>
+                <div className="productDiv">
+                    <img src="./assets/images/mizunaredleafmustardmicrogreens-300x300.jpg" className="productImage flex-item"></img>
+                    <h4 className="productName">Mizuna Red-Leaf Mustard Microgreens</h4>
+                    <h6 className="price">$4.50</h6>
+                    <button className="buttonInfo">Add to Cart</button>
+                </div>
+                <div className="productDiv">
+                    <img src="./assets/images/peashoots-300x300.jpg" className="productImage flex-item"></img>
+                    <h4 className="productName">Pea Shoots</h4>
+                    <h6 className="price">$4.50</h6>
+                    <button className="buttonInfo">Add to Cart</button>
+                </div>
+                <div className="productDiv">
+                    <img src="./assets/images/purplekohlrabimicrogreens2-300x300.jpg" className="productImage flex-item"></img>
+                    <h4 className="productName">Purple Kohlrabi Microgreens</h4>
+                    <h6 className="price">$4.50</h6>
+                    <button className="buttonInfo">Add to Cart</button>
+                </div>
+                </div>);
+        
+    }
+}
+ReactDOM.render(
+    <App />,
+    document.getElementById('firstProductPage')
+);
+</script>
 
 </html>
