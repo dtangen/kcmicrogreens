@@ -101,6 +101,43 @@ img {
     text-align: center;
   }
 
+  .info {
+    position: relative;
+    display: inline-block;
+}
+
+.info .projectInfo {
+    visibility: hidden;
+    width: 300px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+	z-index: 1;
+	
+	top: 100px;
+	left: 105%;
+}
+
+.info:hover .projectInfo {
+    visibility: visible;
+}
+
+/* .info .projectInfo::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -25px;
+    border-width: 25px;
+    border-style: solid;
+    border-color: transparent #000000 transparent transparent;
+} */
+
   .productDiv {
       width: 275px;
       height: 425px;
