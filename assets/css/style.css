@@ -127,6 +127,11 @@ img {
     visibility: visible;
 }
 
+#map {
+    height: 400px;
+    width: 100%;
+   }
+
 /* .info .projectInfo::after {
     content: " ";
     position: absolute;
