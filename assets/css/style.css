@@ -54,9 +54,9 @@ li {
     color: white !important;
 }
 
-div {
+/* div {
     background-color: #90ee90;
-}
+} */
 
 .imageContainer {
     height: 500px;
@@ -130,6 +130,7 @@ img {
 #map {
     height: 400px;
     width: 100%;
+    z-index: 5;
    }
 
 /* .info .projectInfo::after {
