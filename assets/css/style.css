@@ -10,6 +10,9 @@
     margin: 0px 30px;
 }
 
+.card-img-top {
+    height: 300px;
+}
 /* About Us */
 .about {
     margin: 20px;
