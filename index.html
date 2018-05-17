@@ -1,164 +1,162 @@
-<!Doctype <!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Reset CSS -->
-    <link rel="stylesheet" type="text/css" href=".\assets\css\reset.css">
-    <!-- Style CSS -->
-    <link rel="stylesheet" type="text/css" href=".\assets\css\style.css">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href=".\assets/css/animate.css">
-    <!-- Hover CSS -->
-    <link rel="stylesheet" href=".\assets/css/hover.css">
-    <!-- Boostrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- Smooth Scroll -->
-    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-    <!-- Paypal API -->
-    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
-    <script src=".\assets\js\index.js"></script>
-    <!-- Script for smooth scrolling -->
-    <script>
-        $('.smooth').on('click', function () {
-            $.smoothScroll({
-                scrollElement: $('body'),
-                scrollTarget: '#' + this.id
-            });
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            return false;
-        });
-    </script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+
     <title>KC Microgreens</title>
 </head>
 
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <!-- Logo -->
-        <a href="index.html" class="nav-link navHome">
-            <img src="./assets/images/logo.jpg" class="logo hvr-bounce-in" alt="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
+<body style="background-color: rgb(245, 244, 200)">
+    <!-- Header -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgb(86, 160, 26)">
+        <a class="navbar-brand" href="index.html">KC Microgreens</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-stretch" style="justify-content: flex-end;" id="navbarNav">
-            <!-- Heading -->
-            <h2>KC Microgreens - Your source for fresh, locally grown microgreens</h2>
-            <!-- Links to other parts of the website -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link navHome" href="products.html">Products</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navHome" href="microgreens.html">Microgreens 101</a>
+                    <a class="nav-link" href="microgreens101Testing.html">Microgreens 101</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navHome" href="recipes.html">Recipes</a>
+                    <a class="nav-link" href="#">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navHome" href="aboutus.html">About Us</a>
+                    <a class="nav-link" href="#">Recipes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navHome" href="contact.html">Contact</a>
+                    <a class="nav-link" href="#aboutUs">About Us</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- Row that contains the main div + sidebar -->
-    <div class="row">
-        <!-- Main Div -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10">
-                    <div class="imageContainer">
-                        <img src="./assets/images/microgreenAssortment.jpg" class="mainImage" alt="Our stall at the Overland Park Farmer's Market">
-                    </div> <!-- /div imageContainer -->
-                    <div class="info">
-                        <p>What are micro-greens? You aren’t alone if you are asking that question. Micro-greens are really
-                            small versions of plants you already know and love (well even if you don’t love some of their
-                            grown up counterparts, you may still love micros). They are somewhere between a sprout and a
-                            “baby” green. Micro greens are high in nutrient density. Micro-greens can pack a lot of flavor
-                            in a small package. They are versatile and can be added to lots of things. They are beautiful!
-                            They are quick and easy to grow if you want to grow your own. Micro-greens are new (new enough
-                            that they aren’t in any local grocery stores), growing in popularity and some would call them
-                            a super food because they contain higher nutrient levels than their grown up counterparts.
-                            <br>
-                            <br> There is a lot of misinformation and a bit of a grey area surrounding the topic of micro-greens
-                            and what to call them. I’ve seen micro-greens also referred to as sprouts, shoots, and sprouted
-                            greens. I’ve seen sprouts referred to as micro-greens or leafy sprouts. Confusing, I know. What
-                            ever you call them, I want you to know the difference between micro-greens and sprouts. Micro-greens
-                            are not sprouts as I would define sprouts. Sprouts are germinated seeds, usually grown without
-                            medium, kept moist through the growing process. Micro-greens differ from sprouts in a number
-                            of ways. Micro-greens are grown in a medium (seed starting mix, soil, grow mat, etc). Micro-greens
-                            are usually grown a little longer than sprouts. Sprouts are usually not grown past the cotyledon
-                            (those first leaves that appear when a seed germinates) stage. Micro-greens are often (but not
-                            always) grown to the first set of true leaves (the next set that follows the cotyledons). Something
-                            grown even longer, I would call a shoot.
-                            <br> Unlike sprouts, the seed and root of micro-greens are not consumed. Micro-greens are cut above
-                            the soil level to harvest and then washed or rinsed. Some types of micro-greens may have a few
-                            seed hulls attached when ready to harvest. With Micro-greens, the seeds are kept moist until
-                            they germinate and then only the medium is kept moist. So now that you know what micro-greens
-                            are, you can watch for them to pop up in restaurants and farmers markets in your area.</p>
-                    </div>
-                </div>
 
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 img-fluid" src="./assets/images/broccolimicrogreens.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="./assets\images\arugulamicrogreens-600x600.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="./assets\images\microgreenAssortment.jpg" alt="Third slide">
             </div>
         </div>
-        <!-- Sidebar: Contains divs for the shopping cart, social media icons, calendar, partners, and the blog -->
-        <div class="col-md-2 sidebarGroup">
-            <!-- Shopping Cart -->
-            <div class="sidebar">
-            </div>
-            <!-- Social Media -->
-            <div class="sidebar">
-                <h2>Follow Us</h2>
-                <a href="https://www.facebook.com/Food-Life-Joy-420814524710953/ " class="sidebarSocial" target="blank">
-                    <img src="./assets/images/facebook.png" class="social hvr-bounce-in">
-                </a>
-                <a href="https://twitter.com/foodlifejoy" class="sidebarSocial" target="blank">
-                    <img src="./assets/images/twitter.png" class="social hvr-bounce-in">
-                </a>
-                <a href="https://www.instagram.com/foodlifejoy/?hl=en" class="sidebarSocial" target="blank">
-                    <img src="./assets/images/instagram.png" class="social hvr-bounce-in">
-                </a>
-            </div>
-            <!-- Calendar -->
-            <div class="sidebar">
-                <h2>Upcoming Events</h2>
-                <ul>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-                </ul>
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <h1 class="col-lg-12 text-center">Your source for fresh, locally-grown microgreens</h1>
+            <div class="card col-lg-3" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Microgreens 101</h5>
+                    <p class="card-text">Everything you need to know about microgreens</p>
+                    <a href="microgreens101Testing.html" class="btn btn-success" style="background-color: rgb(86, 160, 26)">Learn More</a>
+                </div>
             </div>
-            <!-- Partners -->
-            <div class="sidebar">
-                <a href="https://koenigandhill.com/product-category/microgreens/" target="blank" class="sidebarLink">
-                    <h6>Place an order through our partners at Koenig and Hill</h6>
-                </a>
+            <div class="card col-lg-3" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Getting Started</h5>
+                    <p class="card-text">View our wide assortment of microgreens or buy a kit to grow your own</p>
+                    <a href="#" class="btn btn-success" style="background-color: rgb(86, 160, 26)">View Products</a>
+                </div>
             </div>
-            <!-- Blog -->
-            <div class="sidebar">
-                <a href="http://foodlifejoy.com/" target="blank" class="sidebarLink">
-                    <h6> Read our blog</h6>
-                </a>
+            <div class="card col-lg-3" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Recipes</h5>
+                    <p class="card-text">Some of our favorite ways to incorporate microgreens into our meals</p>
+                    <a href="#" class="btn btn-success" style="background-color: rgb(86, 160, 26)">See Recipes</a>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Footer -->
-    <footer>
-        <div class="footer">
-            <h6 style="text-align: center;"> Copyright © 2018
-                <a href="http://dantangen.com" target="blank" class="footerText">Dan Tangen</a>
-            </h6>
+
+    <!-- About Us -->
+    <div class="container-fluid" id="aboutUs">
+        <h1 class="text-center about">About Us</h1>
+        <p class="text-center">We provide a wide variety of naturally-grown living microgreens. We also offer bulk orders with delivery for restaurants
+            and chefs. All microgreens are home-grown and non-gmo.
+        </p>
+    </div>
+
+    <!-- Stay Connected -->
+    <div class="container-fluid text-center">
+        <h1>Stay Connected</h1>
+        Contact us at info@foodlifejoy.com
+        <br> Follow us on Social Media:
+        <br>
+        <a href="https://www.facebook.com/Food-Life-Joy-420814524710953/" target="blank">
+            <img src="./assets/images/facebook.png" class="social">
+        </a>
+        <a href="https://twitter.com/foodlifejoy" target="blank">
+            <img src="./assets/images/twitter.png" class="social">
+        </a>
+        <a href="https://www.instagram.com/foodlifejoy/?hl=en" target="blank">
+            <img src="./assets/images/instagram.png" class="social">
+        </a>
+        <br> Visit us in person at the Overland Park Farmer's Market:
+        <br> Every Saturday between April 14 - November 10
+
+        <h5>Located at:</h5>
+        <p> 7950 Marty St.
+            <br> Overland Park, KS 66204
+            <br> Hours: 7:30AM - 1:00PM</p>
+        <br>
+
+        <!-- Map -->
+        <div class="container-fluid map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.338779078615!2d-94.6729216846645!3d38.98476384939474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0ec73d8e0cb7b%3A0xc77344ea4775771a!2sOverland+Park+Farmers&#39;+Market!5e0!3m2!1sen!2sus!4v1526512417105"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-    </footer>
+    </div>
+    <!-- Footer -->
+    <nav class="navbar sticky-bottom navbar-dark footer" style="background-color: rgb(86, 160, 26)">
+        <a class="navbar-brand mx-auto" href="http://dantangen.com/" target="__blank">&#169; Dan Tangen 2018</a>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
