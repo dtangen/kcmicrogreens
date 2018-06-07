@@ -1,28 +1,32 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+$(document).ready(function () {
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    //Modals for the recipes page
+    $('#exampleModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    //Microgreens 101 Page
+    $('#harvestWash').hide();
+    $('#useThem').hide();
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
+    //Show info for first slide
+    $('#firstSlide').on('click', function() {
+        $('#knowMicrogreens').show();
+        $('#harvestWash').hide();
+        $('#useThem').hide();
+    });
+
+    //Show info for second slide
+    $('#secondSlide').on('click', function() {
+        $('#knowMicrogreens').hide();
+        $('#harvestWash').show();
+        $('#useThem').hide();
+    });
+
+    //Show info for third slide
+    $('#thirdSlide').on('click', function() {
+        $('#knowMicrogreens').hide();
+        $('#harvestWash').hide();
+        $('#useThem').show();
+    });
+});

@@ -1,253 +1,343 @@
-<!Doctype <!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href=".\assets\css\reset.css">
-    <link rel="stylesheet" type="text/css" href=".\assets\css\style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-    <script>
-        $('.smooth').on('click', function () {
-            $.smoothScroll({
-                scrollElement: $('body'),
-                scrollTarget: '#' + this.id
-            });
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            return false;
-        });
-    </script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+
     <title>KC Microgreens</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <a href="index.html" class="nav-link navHome">
-            <img src="./assets/images/logo.jpg" class="logo" alt="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
+<body style="background-color: rgb(245, 244, 200)">
+    <!-- Header -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgb(86, 160, 26)">
+        <a class="navbar-brand" href="index.html">KC Microgreens</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-stretch" style="justify-content: flex-end;" id="navbarNav">
-            <h2>KC Microgreens - Your source for fresh, locally grown microgreens</h2>
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link navHome" href="products.html">Products</a>
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navHome" href="microgreens.html">Microgreens 101</a>
+                    <a class="nav-link" href="microgreens101.html">Microgreens 101</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="products.html">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navHome" href="recipes.html">Recipes</a>
+                    <a class="nav-link" href="recipes.html">Recipes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navHome" href="aboutus.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navHome" href="contact.html">Contact</a>
+                    <a class="nav-link" href="index.html#aboutUs">About Us</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="row">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10">
-                    <div id='firstProductPage'></div>
-                </div>
 
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="col-md-2 sidebarGroup">
-            <div class="sidebar">
+        <div class="row justify-content-center">
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
             </div>
-            <div class="sidebar">
-                <h2>Follow Us</h2>
-                <a href="https://www.facebook.com/Food-Life-Joy-420814524710953/" target="blank">
-                    <img src="./assets/images/facebook.png" class="social">
-                </a>
-                <a href="https://twitter.com/foodlifejoy" target="blank">
-                    <img src="./assets/images/twitter.png" class="social">
-                </a>
-                <a href="https://www.instagram.com/foodlifejoy/?hl=en" target="blank">
-                    <img src="./assets/images/instagram.png" class="social">
-                </a>
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
             </div>
-            <div class="sidebar">
-                <h2>Upcoming Events</h2>
-                <ul>
-                </ul>
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
             </div>
-            <div class="sidebar">
-                <a href="https://koenigandhill.com/product-category/microgreens/" target="blank" class="sidebarLink">
-                    <h6>Place an order through our partners at Koenig and Hill</h6>
-                </a>
-            </div>
-            <div class="sidebar">
-                <a href="http://foodlifejoy.com/" target="blank" class="sidebarLink">
-                    <h6>Read our blog</h6>
-                </a>
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
             </div>
         </div>
+        <div class="row justify-content-center">
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+            <div class="card product" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/images/broccolimicrogreens.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Broccoli Microgreens</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">$4.50</h6>
+                    <p class="card-text">Broccoli microgreens are super tasty with an impressive nutritional profile.</p>
+                </div>
+                <div class="card-body">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="GML3QSA6RAPYC">
+                        <input type="image" src="https://i.imgur.com/1GFRaBw.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--View Cart Button (Will Place Later) -->
+        <!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                ">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form> -->
     </div>
-    <footer>
-        <div class="footer">
-            <h6 style="text-align: center;"> Copyright © 2018
-                <a href="http://dantangen.com" target="blank" class="footerText">Dan Tangen</a>
-            </h6>
-        </div>
-    </footer>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
 
-<script type="text/babel">
-    class App extends React.Component {
-        render() {
-            return (
-            <div className="flex-container">
-                <div className="productDiv info">
-                    <span className="projectInfo">
-                        Arugula microgreens are gently lobed like a heart and are a soft shade of minty green. 
-                        Though delicate in comparison to fully-grown arugula leaves,  tarugula microgreens still offer a substantial peppery bite and a slightly earthy and nutty finish.
-                        They are high in vitamins A and C, calcium, folic acid, glucosinolates (GSLs), and phenols that are believed to help fend off environmental toxins.
-                        Arugula microgreens are intended for raw preparations, specifically as a garnish. Though small, young and tender, their strong peppery bite is best suited for savory dishes. 
-                        The delicate leaves wilt if exposed to prolonged heat and do not stand up to heavy dressings or sauces. 
-                        They are best left undressed, added only at the very final stage of finishing a dish. 
-                        Complimentary flavors include cheeses such as Parmesan, feta, chevre, gorgonzola, and mozzarella. 
-                        Other complementary flavors include balsamic vinegar, lemon, mint, cucumber, tomato, olives, garlic, beets, fennel, pears, grapes, prosciutto and roast beef.
-                    </span>
-                    <img src="./assets/images/arugulamicrogreens-600x600.jpg" className="productImage flex-item"></img>
-                    <h4 className="productName">Arugala Microgreens</h4>
-                    <h6 className="price">$4.50</h6>
-                    <button className="buttonInfo">Add to Cart</button>
-                </div>
-                <div className="productDiv info">
-                    <span className="projectInfo">
-                        Broccoli microgreens are super tasty with an impressive nutritional profile. 
-                        Health benefits of broccoli are enormous. 
-                        It has twice as much vitamin C as spinach and as much as lemons, thus being an excellent support to our immune system. 
-                        Broccoli has antioxidant and anticancer compounds. 
-                        Recent researches have shown that broccoli contains sulforaphane, a substance which could protect us against the risk of cancer occurring, and reduce the severity of cancers that do occur.
-                        Broccoli is also very high in Vitamin A. 
-                        Vitamin A helps keep your eyes healthy and stave off glaucoma and other degenerative eye diseases. 
-                        It also helps to promote healthy skin, break down urinary stones and maintain healthy bones and teeth.
-                        Broccoli micros can be eaten raw, stir-fried or steamed. 
-                        They look decorative in salads or piled on top of sandwich fillings like chicken or egg salad. 
-                        A dash of a low-calorie mayonnaise or a light vinegar dressing of your choice makes them truly delicious.
-                        You will not lose the nutrient content by steaming your micros. 
-                        You will best preserve the nutrients, though, if you do not cook the micros for long. 
-                        If using the micros in a stir-fry, cook the micros over a very low heat and don’t let them cook for more than a few minutes.
-                    </span>
-                    <img src="./assets/images/broccolimicrogreens.jpg" className="productImage flex-item"></img>
-                    <h4 className="productName">Broccoli Microgreens</h4>
-                    <h6 className="price">$4.50</h6>
-                    <button className="buttonInfo">Add to Cart</button>
-                </div>
-                <div className="productDiv info">
-                    <span className="projectInfo">
-                        A spicy microgreen with a vibrant pink stem and a deep green top. 
-                        China Rose Radish microgreens have a satisfying true radish flavor. 
-                        They are spicy and floral with a hint of sweetness to add a little perk to sandwiches, salads soups and stews.  
-                        Contains vitamins A, B, C, E, and K, folic acid, niacin, potassium, iron, phosphorus, pantothenic acid, calcium, magnesium, zinc, carotenes.
-                    </span>
-                    <img src="./assets/images/chinaroseradishmicrogreens-300x300.jpg" className="productImage flex-item"></img>
-                    <h4 className="productName">China Rose Radish Microgreens</h4>
-                    <h6 className="price">$4.50</h6>
-                    <button className="buttonInfo">Add to Cart</button>
-                </div>
-                <div className="productDiv info">
-                <span className = "projectInfo">
-                    Golden Acre Cabbage is very mild and tender. 
-                    It conveys the same flavor of grown cabbage but even more flavorful.  
-                    Light green color.  
-                    Great in salads or slaws. 
-                    Makes a great base for any microgreens salad.
-                </span>
-                    <img src="./assets/images/goldenacrecabbagemicrogreens-300x300.jpg" className="productImage flex-item"></img>
-                    <h4 className="productName">Golden Acre Cabbage Microgreens</h4>
-                    <h6 className="price">$4.50</h6>
-                    <button className="buttonInfo">Add to Cart</button>
-                </div>
-                <div className="productDiv info">
-                    <span className = "projectInfo">
-                        Delicious microgreens are nutrient powerhouses that you can easily grow in your own kitchen from vegetable and herb seeds. 
-                        This mix adds spicy flavor and crispy texture to excite your palate.  
-                        Microgreens make an awesome substitute for lettuce or other cooking greens. 
-                        You can use them in sprout salads, stir-frys, casseroles and even on sandwiches.
-                        Everything is pre-measured for your success, just add water. 
-                        Complete instructions are included, no special lighting is needed, just a window or spot where florescent light is on during the day. 
-                        Greens are ready to harvest in 7-10 days.
-                    </span>
-                    <img src="./assets/images/microgreenskit-300x300.jpg" className="productImage flex-item"></img>
-                    <h4 className="productName">Grow-Your-Own Microgreens Kit</h4>
-                    <h6 className="price">$6.00</h6>
-                    <button className="buttonInfo">Add to Cart</button>
-                </div>
-                <div className="productDiv info">
-                <span className = "projectInfo">
-                    Mild flavor, mild crunch, big-time nutrition. 
-                    Mild mix of broccoli, chard, mizuna and kale, but may vary.
-                </span>
-                    <img src="./assets/images/mildmixmicrogreens-300x300.jpg" className="productImage flex-item"></img>
-                    <h4 className="productName">Mild Mix Microgreens</h4>
-                    <h6 className="price">$4.50</h6>
-                    <button className="buttonInfo">Add to Cart</button>
-                </div>
-                <div className="productDiv info">
-                    <span className = "projectInfo">
-                        Fairly mild mustard flavor with reddish-purple highlights on the leaves.
-                    </span>
-                    <img src="./assets/images/mizunaredleafmustardmicrogreens-300x300.jpg" className="productImage flex-item"></img>
-                    <h4 className="productName">Mizuna Red-Leaf Mustard Microgreens</h4>
-                    <h6 className="price">$4.50</h6>
-                    <button className="buttonInfo">Add to Cart</button>
-                </div>
-                <div className="productDiv info">
-                    <span className = "projectInfo">
-                    Long prominent in Asian cuisine, pea shoots are one of the newer ingredients showing up in US farmer’s markets. 
-                    Their soft leaves, curly-cue tendrils and watery stems hold the promise of spring peas to come. 
-                    But even better than that, they hold the flavor of them, too.
-                    Turns out, you can very easily just swap them in for any soft, leafy green in a recipe. 
-                    The stems are edible — and the tendrils are just delicious. 
-                    They cook up very similarly to baby spinach and are versatile, too. 
-                    You can eat pea shoots raw in a fresh salad; they can take the place of the more traditional lettuce or simply enhance it with pea shoots’ spring flavor. 
-                    You can stir fry them with sesame oil and garlic, as has long been done in Asian cooking. 
-                    These greens can also brighten up a spring pasta dish, contributing a fresh, soft taste.
-                    To prepare and store pea shoots, there are just a couple of things to know. 
-                    Since they are a delicate green, it’s best to eat them within a few days of purchase. 
-                    They should be stored in the fridge like you would lettuce; and when ready to eat, coarse or yellow stems should be removed.
-                    </span>
-                    <img src="./assets/images/peashoots-300x300.jpg" className="productImage flex-item"></img>
-                    <h4 className="productName">Pea Shoots</h4>
-                    <h6 className="price">$4.50</h6>
-                    <button className="buttonInfo">Add to Cart</button>
-                </div>
-                <div className="productDiv info">
-                <span className = "projectInfo">
-                    Has a mildly pleasing flavor that provides a nice contrast to the more spicy microgreens.  
-                    Stunning purple stems and dark green leaves.  Good base for microgreen salads.  
-                    Beautiful as a garnish for enhancing meat dishes and appetizers.
-                </span>
-                    <img src="./assets/images/purplekohlrabimicrogreens2-300x300.jpg" className="productImage flex-item"></img>
-                    <h4 className="productName">Purple Kohlrabi Microgreens</h4>
-                    <h6 className="price">$4.50</h6>
-                    <button className="buttonInfo">Add to Cart</button>
-                </div>
-                </div>);
-        
-    }
-}
-ReactDOM.render(
-    <App />,
-    document.getElementById('firstProductPage')
-);
-</script>
+    <!-- Footer -->
+    <nav class="navbar sticky-bottom navbar-dark footer" style="background-color: rgb(86, 160, 26)">
+        <a class="navbar-brand mx-auto" href="http://dantangen.com/" target="__blank">&#169; Dan Tangen 2018</a>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src=./assets/js/index.js></script>
+</body>
 
 </html>

@@ -1,107 +1,137 @@
-<!Doctype <!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href=".\assets\css\reset.css">
-    <link rel="stylesheet" type="text/css" href=".\assets\css\style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-    <script>
-        $('.smooth').on('click', function () {
-            $.smoothScroll({
-                scrollElement: $('body'),
-                scrollTarget: '#' + this.id
-            });
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            return false;
-        });
-    </script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+
     <title>KC Microgreens</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <a href="index.html" class="nav-link navHome">
-            <img src="./assets/images/logo.jpg" class="logo" alt="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
+<body style="background-color: rgb(245, 244, 200)">
+    <!-- Header -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgb(86, 160, 26)">
+        <a class="navbar-brand" href="index.html">KC Microgreens</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-stretch" style="justify-content: flex-end;" id="navbarNav">
-            <h2>KC Microgreens - Your source for fresh, locally grown microgreens</h2>
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link navHome" href="products.html">Products</a>
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navHome" href="microgreens.html">Microgreens 101</a>
+                    <a class="nav-link" href="microgreens101.html">Microgreens 101</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navHome" href="recipes.html">Recipes</a>
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="recipes.html">Recipes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navHome" href="aboutus.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navHome" href="contact.html">Contact</a>
+                    <a class="nav-link" href="index.html#aboutUs">About Us</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="row">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10">
 
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <h1>Recipes</h1>
+        <div class="dropdown">
+            <ul>
+                <li class="dripdown-toggle" data-toggle="dropdown">Arugula Microgreens</li>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Recipe 1</a>
+                    <a class="dropdown-item" href="#">Recipe 2</a>
+                    <a class="dropdown-item" href="#">Recipe 3</a>
                 </div>
-
-            </div>
+            </ul>
+            <ul>
+                <li class="dripdown-toggle" data-toggle="dropdown">Broccoli Microgreens</li>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Recipe 1</a>
+                    <a class="dropdown-item" href="#">Recipe 2</a>
+                    <a class="dropdown-item" href="#">Recipe 3</a>
+                </div>
+            </ul>
+            <ul>
+                <li class="dripdown-toggle" data-toggle="dropdown">Mild Mix Microgreens</li>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Recipe 1</a>
+                    <a class="dropdown-item" href="#">Recipe 2</a>
+                    <a class="dropdown-item" href="#">Recipe 3</a>
+                </div>
+            </ul>
         </div>
-        <div class="col-md-2 sidebarGroup">
-            <div class="sidebar">
-            </div>
-            <div class="sidebar">
-                <h2>Follow Us</h2>
-                <a href="https://www.facebook.com/Food-Life-Joy-420814524710953/" target="blank">
-                    <img src="./assets/images/facebook.png" class="social">
-                </a>
-                <a href="https://twitter.com/foodlifejoy" target="blank">
-                    <img src="./assets/images/twitter.png" class="social">
-                </a>
-                <a href="https://www.instagram.com/foodlifejoy/?hl=en" target="blank">
-                    <img src="./assets/images/instagram.png" class="social">
-                </a>
-            </div>
-            <div class="sidebar">
-                <h2>Upcoming Events</h2>
-                <ul>
-                </ul>
-            </div>
-            <div class="sidebar">
-                <a href="https://koenigandhill.com/product-category/microgreens/" target="blank" class="sidebarLink">
-                    <h6>Place an order through our partners at Koenig and Hill</h6>
-                </a>
-            </div>
-            <div class="sidebar">
-                <a href="http://foodlifejoy.com/" target="blank" class="sidebarLink">
-                    <h6>Read our blog</h6>
-                </a>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Recipe 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body recipe">
+                    <div class="row">
+                        <img src="./assets/images/broccolimicrogreens.jpg" class="recipeImage">
+                        <div>
+                            <h4 class="ingredients">Ingredients</h4>
+                            <ul class="recipeIngredients">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                            </ul>
+                            <h4 class="recipeInfo">Steps</h4>
+                            <ul class="recipeSteps">
+                                <li>Step 1</li>
+                                <li>Step 2</li>
+                                <li>Step 3</li>
+                                <li>Step 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Back to Recipes</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="footer">
-            <h6 style="text-align: center;"> Copyright © 2017
-                <a href="http://dantangen.com" target="blank" class="footerText">Dan Tangen</a>
-            </h6>
-        </div>
-    </footer>
+    <div class="emptySpace">
+
+    </div>
+    <!-- Footer -->
+    <nav class="navbar sticky-bottom navbar-dark footer" style="background-color: rgb(86, 160, 26)">
+        <a class="navbar-brand mx-auto" href="http://dantangen.com/" target="__blank">&#169; Dan Tangen 2018</a>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src=./assets/js/index.js></script>
 </body>
 
 </html>

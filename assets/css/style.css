@@ -1,7 +1,31 @@
+ul {
+    list-style-type: none;
+}
+
 /* Carousel */
 .carousel-inner {
     height: 500px;
     border: solid 10px white;
+}
+
+.carousel-caption {
+    top: 350px;
+}
+
+.slideHeader {
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.slideInfo {
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 /* Card */
@@ -13,6 +37,48 @@
 .card-img-top {
     height: 300px;
 }
+
+/* Product Card */
+.product {
+    margin: 20px;
+}
+
+/* Recipe Modal */
+.recipeImage {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+}
+
+.recipeInfo {
+    width: 300px;
+}
+
+.recipeSteps {
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+}
+
+/* Microgreens Info */
+.microgreensInfo {
+    background-color: white;
+    height: 600px;
+    margin: 25px;
+}
+
+.infoHeader {
+    text-align: center;
+}
+
+.infoText {
+    text-align: center;
+}
+/* Empty Space */
+.emptySpace {
+    min-height: 1000px;
+}
+
 /* About Us */
 .about {
     margin: 20px;
