@@ -43,6 +43,18 @@ ul {
     margin: 20px;
 }
 
+
+/* Recipe Image */
+.recipePreview {
+    width: 400px;
+    height: 400px;
+}
+
+.recipeLabel {
+    left: 0px;
+    top: 0px;
+}
+
 /* Recipe Modal */
 .recipeImage {
     width: 400px;
