@@ -2,6 +2,49 @@ ul {
     list-style-type: none;
 }
 
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .instagram {
+    background: #007bb5;
+    color: white;
+  }
+  
+
 /* Carousel */
 .carousel-inner {
     height: 500px;
@@ -96,15 +139,42 @@ ul {
     margin: 20px;
 }
 
-/* Social Media Icons */
-.social {
-    height: 50px;
-    width: 50px;
+/* Newsletter */
+#newsletter {
+    text-align: center;
+    background-color: rgb(188, 35, 235);
+    color: white;
+    min-height: 150px;
+}
+
+.newsletterHeader {
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Map Selectors */
+.selectors {
+    width: 600px;
+}
+
+.mapSelectors li {
+    display: inline-block;
+}
+
+#opMap {
+    font-weight: bold;
+    float: left;
+}
+
+#lenMap {
+    font-weight: bold;
+    float: right;
 }
 
 /* Google Maps */
 .map {
     margin: 10px;
+    left: 50%;
 }
 
 /* Footer */

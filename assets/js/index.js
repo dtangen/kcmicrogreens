@@ -5,6 +5,24 @@ $(document).ready(function () {
         $('#myInput').trigger('focus')
     })
 
+    //Modals for the newletter
+    $('#newsletterModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+
+    //Maps for main page
+    $('#lenexaMap').hide();
+
+    $('#opMap').on('click', function() {
+        $('#overlandParkMap').show();
+        $('#lenexaMap').hide();
+    })
+
+    $('#lenMap').on('click', function() {
+        $('#overlandParkMap').hide();
+        $('#lenexaMap').show();
+    })
+
     //Microgreens 101 Page
     $('#harvestWash').hide();
     $('#useThem').hide();
