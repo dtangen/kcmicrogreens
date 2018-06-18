@@ -127,7 +127,7 @@ ul {
 }
 
 .infoText {
-    text-align: center;
+    text-align: left;
 }
 /* Empty Space */
 .emptySpace {
@@ -163,12 +163,10 @@ ul {
 
 #opMap {
     font-weight: bold;
-    float: left;
 }
 
 #lenMap {
     font-weight: bold;
-    float: right;
 }
 
 /* Google Maps */
