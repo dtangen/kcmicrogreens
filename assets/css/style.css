@@ -189,6 +189,7 @@ ul {
     background-color: rgb(188, 35, 235);
     color: white;
     min-height: 150px;
+    padding: 10px;
 }
 
 .newsletterHeader {
