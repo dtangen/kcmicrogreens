@@ -121,14 +121,13 @@ ul {
 .microgreensInfo {
     height: 600px;
     margin: 25px;
-    color: white;
     padding: 20px;
     border: solid 5px white;
 }
 
 .header101 {
     width: 450px;
-    height: 400px;
+    max-height: 70px;
     margin: 10px;
     border: solid 5px white;
     cursor: pointer;
@@ -160,17 +159,18 @@ ul {
 
 #knowMicrogreens {
     background-image: url("backgroundImages/goldenacrecabbagemicrogreens-300x300.jpg");
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("backgroundImages/goldenacrecabbagemicrogreens-300x300.jpg");
+    background-image: linear-gradient(to bottom, rgba(248, 244, 244, 0.733) 0%,rgba(248, 244, 244, 0.733) 100%), url("backgroundImages/goldenacrecabbagemicrogreens-300x300.jpg");
 }
 
 #harvestWash {
     background-image: url("backgroundImages/mizunaredleafmustardmicrogreens-300x300.jpg");
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("backgroundImages/mizunaredleafmustardmicrogreens-300x300.jpg");
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("backgroundImages/mizunaredleafmustardmicrogreens-300x300.jpg"); */
+    background-image: linear-gradient(to bottom, rgba(248, 244, 244, 0.733) 0%,rgba(248, 244, 244, 0.733) 100%), url("backgroundImages/mizunaredleafmustardmicrogreens-300x300.jpg");
 }
 
 #useThem {
     background-image: url("backgroundImages/mildmixmicrogreens-300x300.jpg");
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("backgroundImages/mildmixmicrogreens-300x300.jpg");
+    background-image: linear-gradient(to bottom, rgba(248, 244, 244, 0.733) 0%,rgba(248, 244, 244, 0.733) 100%), url("backgroundImages/mildmixmicrogreens-300x300.jpg");
 }
 
 /* Empty Space */
