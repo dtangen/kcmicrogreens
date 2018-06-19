@@ -13,12 +13,12 @@ $(document).ready(function () {
     //Maps for main page
     $('#lenexaMap').hide();
 
-    $('#opMap').on('click', function() {
+    $('#opMap').on('click', function () {
         $('#overlandParkMap').show();
         $('#lenexaMap').hide();
     })
 
-    $('#lenMap').on('click', function() {
+    $('#lenMap').on('click', function () {
         $('#overlandParkMap').hide();
         $('#lenexaMap').show();
     })
@@ -28,23 +28,31 @@ $(document).ready(function () {
     $('#useThem').hide();
 
     //Show info for first slide
-    $('#firstSlide').on('click', function() {
+    $('#firstSlide').on('click', function () {
         $('#knowMicrogreens').show();
         $('#harvestWash').hide();
         $('#useThem').hide();
     });
 
     //Show info for second slide
-    $('#secondSlide').on('click', function() {
+    $('#secondSlide').on('click', function () {
         $('#knowMicrogreens').hide();
         $('#harvestWash').show();
         $('#useThem').hide();
     });
 
     //Show info for third slide
-    $('#thirdSlide').on('click', function() {
+    $('#thirdSlide').on('click', function () {
         $('#knowMicrogreens').hide();
         $('#harvestWash').hide();
         $('#useThem').show();
     });
+
+    //Product page jumbotron
+    $(".koenigHill").click(function () {
+        var koenigHill = $(this).attr("data-link");
+        window.open(koenigHill);
+        return false;
+    });
+
 });

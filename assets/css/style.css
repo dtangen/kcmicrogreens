@@ -173,6 +173,14 @@ ul {
     background-image: linear-gradient(to bottom, rgba(248, 244, 244, 0.733) 0%,rgba(248, 244, 244, 0.733) 100%), url("backgroundImages/mildmixmicrogreens-300x300.jpg");
 }
 
+/* Koenig and Hill */
+.koenigHill {
+    background-color: rgb(188, 35, 235);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
 /* Empty Space */
 .emptySpace {
     min-height: 1000px;
