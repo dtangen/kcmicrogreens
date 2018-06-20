@@ -205,6 +205,19 @@ ul {
     padding: 5px;
 }
 
+/* Newsletter Modal */
+label {
+    width: 125px;
+}
+
+.labelModal {
+    width: 400px;
+}
+
+.modalCheckbox {
+    width: 150px;
+}
+
 /* Map Selectors */
 .selectors {
     width: 600px;
