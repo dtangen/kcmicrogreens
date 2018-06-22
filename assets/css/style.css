@@ -105,6 +105,10 @@ ul {
 }
 
 /* Recipe Modal */
+.dropdown {
+    display: inline-block;
+}
+
 .recipeImage {
     width: 400px;
     height: 400px;
@@ -143,6 +147,7 @@ ul {
     min-height: 70px;
     text-align: center;
     font-size: 24px;
+    cursor: pointer;
 }
 
 #arugulaMicrogreens {
