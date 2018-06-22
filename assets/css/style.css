@@ -90,6 +90,10 @@ ul {
 
 
 /* Recipe Image */
+.recipeHeader {
+    text-align: center;
+}
+
 .recipePreview {
     width: 400px;
     height: 400px;
@@ -111,10 +115,46 @@ ul {
     width: 300px;
 }
 
+.recipeIngredients li {
+    border-top: solid 1px black;
+}
+
+.recipeIngredients li:first-child {
+    border: none;
+}
+
 .recipeSteps {
     padding: 10px;
     margin: 20px;
     width: 300px;
+}
+
+.recipeSteps li {
+    border-top: solid 1px black;
+}
+
+.recipeSteps li:first-child {
+    border: none;
+}
+
+.recipeDropdown {
+    color: white;
+    width: 450px;
+    min-height: 70px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#arugulaMicrogreens {
+    background-image: url("backgroundImages/arugulamicrogreens-600x600.jpg");
+}
+
+#broccoliMicrogreenRecipes {
+    background-image: url("backgroundImages/broccolimicrogreens.jpg");
+}
+
+#mildMixMicrogreens {
+    background-image: url("backgroundImages/mildmixmicrogreens-300x300.jpg");
 }
 
 /* Microgreens Info */
