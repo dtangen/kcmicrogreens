@@ -109,6 +109,14 @@ ul {
     display: inline-block;
 }
 
+.recipeHeaders {
+    width: 100%;
+}
+
+.recipeHeaders ul {
+    padding: 10px;
+}
+
 .recipeImage {
     width: 400px;
     height: 400px;
@@ -146,8 +154,13 @@ ul {
     width: 450px;
     min-height: 70px;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 #arugulaMicrogreens {
@@ -294,4 +307,67 @@ label {
 /* Footer */
 .footer {
     margin-bottom: 0px;
+}
+
+/* Resizing */
+@media (max-width: 1024px) {
+    
+    /* Main Page */
+    .icon-bar a {
+        padding: 10px;
+        font-size: 15px;
+      }
+
+    .carousel-inner {
+        height: 400px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+    
+    .card-text {
+        height: 75px;
+    }
+
+    /* Microgreens 101 */
+    .header101 {
+        width: 300px;
+        max-height: 70px;
+        margin: 10px;
+    }
+
+    .slideHeader {
+        font-size: 18px;
+    }
+
+    /* Recipe Page */
+    .recipeHeaders {
+        padding: 0px;
+    }
+
+    .recipeDropdown {
+        width: 300px;
+    }
+
+    .dropdown ul {
+        display: block;
+        margin: 0px auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 425px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 320px) {
+
 }
