@@ -299,6 +299,65 @@ label {
     left: 50%;
 }
 
+/* --------------- Chefs Page --------------- */
+.chefHeader {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+.threeDollars {
+    text-align: center;
+    border-right: solid 10px black;
+    border-bottom: solid 5px black;
+    border-top: solid 5px black;
+    border-left: solid 10px black;
+    height: 1000px;
+    font-size: 42px;
+}
+
+.threeDollars li {
+    border-top: dashed 1px black;
+}
+
+.threeDollars li:first-child {
+    border: none;
+}
+
+.threeTwentyFive {
+    text-align: center;
+    border-left: solid 10px black;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+    border-right: solid 10px black;
+    font-size: 42px;
+}
+
+.threeTwentyFive li {
+    border-top: dashed 1px black;
+}
+
+.threeTwentyFive li:first-child {
+    border: none;
+}
+
+.chefPaddingList {
+    padding: 1px;
+}
+
+.chefOptions {
+    padding: 0px;
+}
+
+.chefFooter {
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+}
+
+.chefFooterHeader {
+    text-align: center;
+}
+
 /* Coming Soon */
 .comingSoon {
     text-align: center;
@@ -311,7 +370,7 @@ label {
 
 /* Resizing */
 @media (max-width: 1024px) {
-    
+
     /* Main Page */
     .icon-bar a {
         padding: 10px;
