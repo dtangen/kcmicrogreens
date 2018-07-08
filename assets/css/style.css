@@ -371,7 +371,7 @@ label {
 /* Resizing */
 @media (max-width: 1024px) {
 
-    /* Main Page */
+    /* --------------- Main Page --------------- */
     .icon-bar a {
         padding: 10px;
         font-size: 15px;
@@ -388,6 +388,7 @@ label {
     .card-text {
         height: 75px;
     }
+    /* --------------- /Main Page --------------- */
 
     /* Microgreens 101 */
     .header101 {
@@ -416,6 +417,30 @@ label {
 }
 
 @media (max-width: 768px) {
+
+    /* --------------- Main Page --------------- */
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-text {
+        visibility: hidden;
+    }
+
+    .card-body {
+        height: 125px;
+        text-align: center;
+    }
+
+    .cardButton {
+        position: relative;
+        top: -80px;
+    }
+
+    #aboutUs {
+        padding: 0px 20px;
+    }
+    /* --------------- /Main Page --------------- */
 
 }
 
