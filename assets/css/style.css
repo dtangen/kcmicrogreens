@@ -520,9 +520,13 @@ label {
         font-size: 12px;
     }
 
-    /* Map */
     .mapContainer {
         width: 310px;
+        height: 150px;
+    }
+
+    .mapContainer h1 {
+        font-size: 32px;
     }
     /* --------------- /Main Page --------------- */
 }
