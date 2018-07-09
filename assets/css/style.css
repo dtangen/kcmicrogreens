@@ -1,9 +1,10 @@
+/* --------------- General --------------- */
 ul {
     list-style-type: none;
 }
 
 
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+/* Icon Bar */
 .icon-bar {
     position: fixed;
     top: 50%;
@@ -14,37 +15,48 @@ ul {
     z-index: 999;
   }
   
-  /* Style the icon bar links */
-  .icon-bar a {
+  /* Icon Bar Links */
+.icon-bar a {
     display: block;
     text-align: center;
     padding: 16px;
     transition: all 0.3s ease;
     color: white;
     font-size: 20px;
-  }
+}
   
-  /* Style the social media icons with color, if you want */
-  .icon-bar a:hover {
+  /* Icon Bar Colors*/
+.icon-bar a:hover {
     background-color: #000;
-  }
+}
   
-  .facebook {
+.facebook {
     background: #3B5998;
     color: white;
-  }
+}
   
-  .twitter {
+.twitter {
     background: #55ACEE;
     color: white;
-  }
+}
   
-  .instagram {
+.instagram {
     background: #007bb5;
     color: white;
-  }
-  
+}
 
+/* Empty Space */
+.emptySpace {
+    min-height: 1000px;
+}
+
+/* Footer */
+.footer {
+    margin-bottom: 0px;
+}
+/* --------------- /General --------------- */
+
+/* --------------- Main Page --------------- */
 /* Carousel */
 .carousel-inner {
     height: 500px;
@@ -83,12 +95,78 @@ ul {
     height: 300px;
 }
 
+/* About Us */
+.about {
+    margin: 20px;
+}
+
+/* Newsletter */
+#newsletter {
+    text-align: center;
+    background-color: rgb(188, 35, 235);
+    color: white;
+    min-height: 150px;
+    padding: 10px;
+}
+
+.newsletterHeader {
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Newsletter Modal */
+label {
+    width: 125px;
+}
+
+.labelModal {
+    width: 400px;
+}
+
+.modalCheckbox {
+    width: 150px;
+}
+
+/* Map Selectors */
+.selectors {
+    width: 600px;
+}
+
+.mapSelectors li {
+    display: inline-block;
+}
+
+#opMap {
+    font-weight: bold;
+}
+
+#lenMap {
+    font-weight: bold;
+}
+
+/* Google Maps */
+.map {
+    margin: 10px;
+    left: 50%;
+}
+/* --------------- /Main Page --------------- */
+
+/* --------------- Product Page --------------- */
 /* Product Card */
 .product {
     margin: 20px;
 }
 
+/* Koenig and Hill */
+.koenigHill {
+    background-color: rgb(188, 35, 235);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+/* --------------- /Product Page --------------- */
 
+/* --------------- Recipes Page --------------- */
 /* Recipe Image */
 .recipeHeader {
     text-align: center;
@@ -163,6 +241,7 @@ ul {
         1px 1px 0 #000;
 }
 
+/* Recipe Backgrounds */
 #arugulaMicrogreens {
     background-image: url("backgroundImages/arugulamicrogreens-600x600.jpg");
 }
@@ -175,6 +254,13 @@ ul {
     background-image: url("backgroundImages/mildmixmicrogreens-300x300.jpg");
 }
 
+/* Coming Soon */
+.comingSoon {
+    text-align: center;
+}
+/* --------------- /Recipes Page --------------- */
+
+/* --------------- Microgreens 101 Page --------------- */
 /* Microgreens Info */
 .microgreensInfo {
     height: 600px;
@@ -230,74 +316,7 @@ ul {
     background-image: url("backgroundImages/mildmixmicrogreens-300x300.jpg");
     background-image: linear-gradient(to bottom, rgba(248, 244, 244, 0.733) 0%,rgba(248, 244, 244, 0.733) 100%), url("backgroundImages/mildmixmicrogreens-300x300.jpg");
 }
-
-/* Koenig and Hill */
-.koenigHill {
-    background-color: rgb(188, 35, 235);
-    color: white;
-    text-align: center;
-    cursor: pointer;
-}
-
-/* Empty Space */
-.emptySpace {
-    min-height: 1000px;
-}
-
-/* About Us */
-.about {
-    margin: 20px;
-}
-
-/* Newsletter */
-#newsletter {
-    text-align: center;
-    background-color: rgb(188, 35, 235);
-    color: white;
-    min-height: 150px;
-    padding: 10px;
-}
-
-.newsletterHeader {
-    margin: 10px;
-    padding: 5px;
-}
-
-/* Newsletter Modal */
-label {
-    width: 125px;
-}
-
-.labelModal {
-    width: 400px;
-}
-
-.modalCheckbox {
-    width: 150px;
-}
-
-/* Map Selectors */
-.selectors {
-    width: 600px;
-}
-
-.mapSelectors li {
-    display: inline-block;
-}
-
-#opMap {
-    font-weight: bold;
-}
-
-#lenMap {
-    font-weight: bold;
-}
-
-/* Google Maps */
-.map {
-    margin: 10px;
-    left: 50%;
-}
+/* --------------- /Microgreens 101 Page --------------- */
 
 /* --------------- Chefs Page --------------- */
 .chefHeader {
@@ -357,18 +376,9 @@ label {
 .chefFooterHeader {
     text-align: center;
 }
+/* --------------- /Chefs Page --------------- */
 
-/* Coming Soon */
-.comingSoon {
-    text-align: center;
-}
-
-/* Footer */
-.footer {
-    margin-bottom: 0px;
-}
-
-/* Resizing */
+/* -------------------- Resizing -------------------- */
 @media (max-width: 1024px) {
 
     /* --------------- Main Page --------------- */
@@ -390,7 +400,7 @@ label {
     }
     /* --------------- /Main Page --------------- */
 
-    /* Microgreens 101 */
+    /* --------------- Microgreens 101 --------------- */
     .header101 {
         width: 300px;
         max-height: 70px;
@@ -400,8 +410,9 @@ label {
     .slideHeader {
         font-size: 18px;
     }
+    /* --------------- /Microgreens 101 --------------- */
 
-    /* Recipe Page */
+    /* --------------- Recipe Page --------------- */
     .recipeHeaders {
         padding: 0px;
     }
@@ -414,6 +425,7 @@ label {
         display: block;
         margin: 0px auto;
     }
+    /* --------------- /Recipe Page --------------- */
 }
 
 @media (max-width: 768px) {
@@ -460,9 +472,8 @@ label {
 
 @media (max-width: 425px) {
 
-    /* --------------- Main Page --------------- */
-
-    /* Social Media */
+    /* --------------- General --------------- */
+    /* Icon Bar */
     .icon-bar {
         position: relative;
         top: 25px;
@@ -470,7 +481,7 @@ label {
         margin: 0px;
       }
       
-      /* Style the icon bar links */
+      /* Icon Bar Links */
       .icon-bar a {
         display: inline-block;
         color: white;
@@ -478,6 +489,10 @@ label {
         height: 100%;
         width: 30%;
       }
+    
+    /* --------------- /General --------------- */
+
+    /* --------------- Main Page --------------- */
       
     /* Carousel */
     .carousel-inner {
