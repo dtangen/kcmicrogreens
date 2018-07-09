@@ -446,6 +446,53 @@ label {
 
 @media (max-width: 425px) {
 
+    /* --------------- Main Page --------------- */
+
+    /* Social Media */
+    .icon-bar {
+        position: relative;
+        top: 25px;
+        text-align: center;
+        margin: 0px;
+      }
+      
+      /* Style the icon bar links */
+      .icon-bar a {
+        display: inline-block;
+        color: white;
+        font-size: 20px;
+        height: 100%;
+        width: 30%;
+      }
+      
+    /* Carousel */
+    .carousel-inner {
+        height: 200px;
+    }
+
+    /* Card */
+    .card {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    /* Map */
+    .selectors {
+        visibility: hidden;
+    }
+
+    .iFrame {
+        width: 300px;
+        height: 100px;
+        visibility: hidden;
+    }
+
+    .mapContainer {
+        height: 200px;
+        width: 415px;
+        overflow: hidden;
+    }
+    /* --------------- /Main Page --------------- */
 }
 
 @media (max-width: 375px) {
