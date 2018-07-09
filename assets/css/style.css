@@ -440,6 +440,20 @@ label {
     #aboutUs {
         padding: 0px 20px;
     }
+
+    .selectors {
+        width: 415px;
+    }
+
+    .iFrame {
+        width: 400px;
+        height: 300px;
+    }
+
+    .mapContainer {
+        width: 415px;
+        overflow: hidden;
+    }
     /* --------------- /Main Page --------------- */
 
 }
@@ -489,14 +503,28 @@ label {
 
     .mapContainer {
         height: 200px;
-        width: 415px;
+        width: 355px;
         overflow: hidden;
     }
     /* --------------- /Main Page --------------- */
 }
 
 @media (max-width: 375px) {
+    /* --------------- Main Page --------------- */
+    .sourceMicrogreens {
+        visibility: hidden;
+        height: 25px;
+    }
 
+    .mc-field-group {
+        font-size: 12px;
+    }
+
+    /* Map */
+    .mapContainer {
+        width: 310px;
+    }
+    /* --------------- /Main Page --------------- */
 }
 
 @media (max-width: 320px) {
