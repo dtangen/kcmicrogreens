@@ -263,18 +263,19 @@ label {
 /* --------------- Microgreens 101 Page --------------- */
 /* Microgreens Info */
 .microgreensInfo {
-    height: 600px;
+    height: 30%;
     margin: 25px;
     padding: 20px;
     border: solid 5px white;
 }
 
 .header101 {
-    width: 320px;
+    width: 30%;
     max-height: 70px;
     margin: 10px;
     border: solid 5px white;
     cursor: pointer;
+    text-align: center;
 }
 
 .slideHeader {
@@ -383,7 +384,7 @@ label {
 /* --------------- /Chefs Page --------------- */
 
 /* -------------------- Resizing -------------------- */
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 
     /* --------------- Main Page --------------- */
     .icon-bar a {
@@ -406,13 +407,15 @@ label {
 
     /* --------------- Microgreens 101 --------------- */
     .header101 {
-        width: 250px;
-        max-height: 70px;
-        margin: 10px;
+        margin: 10px 1px;
     }
 
     .slideHeader {
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .microgreensInfo {
+        height: 800px;
     }
     /* --------------- /Microgreens 101 --------------- */
 
@@ -432,7 +435,7 @@ label {
     /* --------------- /Recipe Page --------------- */
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     /* --------------- Main Page --------------- */
     .card-title {
@@ -472,9 +475,15 @@ label {
     }
     /* --------------- /Main Page --------------- */
 
+    /* --------------- Microgreens 101 --------------- */
+    .microgreensInfo {
+        height: auto;
+    }
+    /* --------------- /Microgreens 101 --------------- */
+
 }
 
-@media (max-width: 425px) {
+@media only screen and (max-width: 425px) {
 
     /* --------------- General --------------- */
     /* Icon Bar */
@@ -526,9 +535,15 @@ label {
         overflow: hidden;
     }
     /* --------------- /Main Page --------------- */
+
+    /* --------------- Microgreens 101 --------------- */
+    .infoHeader {
+        font-size: 24px;
+    }
+    /* --------------- /Microgreens 101 --------------- */
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
     /* --------------- Main Page --------------- */
     .sourceMicrogreens {
         visibility: hidden;
@@ -548,8 +563,14 @@ label {
         font-size: 32px;
     }
     /* --------------- /Main Page --------------- */
+
+    /* --------------- Microgreens 101 --------------- */
+    .slideHeader {
+        font-size: 12px;
+    }
+    /* --------------- /Microgreens 101 --------------- */
 }
 
-@media (max-width: 320px) {
-
+@media only screen and (max-width: 320px) and (min-width: 320px) {
+    
 }
