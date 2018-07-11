@@ -336,8 +336,10 @@ label {
     border-bottom: solid 5px black;
     border-top: solid 5px black;
     border-left: solid 10px black;
-    height: 1000px;
+    height: auto;
+    min-height: 1000px;
     font-size: 42px;
+    margin-bottom: 250px;
 }
 
 .threeDollars li {
@@ -354,6 +356,9 @@ label {
     border-top: solid 5px black;
     border-bottom: solid 5px black;
     border-right: solid 10px black;
+    height: auto;
+    min-height: 1000px;
+    margin-bottom: 250px;
     font-size: 42px;
 }
 
