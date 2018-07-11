@@ -419,6 +419,9 @@ label {
     }
     /* --------------- /Microgreens 101 --------------- */
 
+    /* --------------- Product Page --------------- */
+    /* --------------- /Product Page --------------- */
+
     /* --------------- Recipe Page --------------- */
     .recipeHeaders {
         padding: 0px;
@@ -481,6 +484,8 @@ label {
     }
     /* --------------- /Microgreens 101 --------------- */
 
+    /* --------------- Product Page --------------- */
+    /* --------------- /Product Page --------------- */
 }
 
 @media only screen and (max-width: 425px) {
