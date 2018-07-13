@@ -227,9 +227,13 @@ label {
     border: none;
 }
 
+.recipeType {
+    width: 30%;
+    margin: 0px auto;
+}
+
 .recipeDropdown {
     color: white;
-    width: 450px;
     min-height: 70px;
     text-align: center;
     font-size: 28px;
@@ -432,10 +436,6 @@ label {
         padding: 0px;
     }
 
-    .recipeDropdown {
-        width: 300px;
-    }
-
     .dropdown ul {
         display: block;
         margin: 0px auto;
@@ -491,6 +491,12 @@ label {
 
     /* --------------- Product Page --------------- */
     /* --------------- /Product Page --------------- */
+
+    /* --------------- Recipe Page --------------- */
+    .recipeDropdown {
+        font-size: 17px;
+    }
+    /* --------------- /Recipe Page --------------- */
 }
 
 @media only screen and (max-width: 425px) {
@@ -551,6 +557,17 @@ label {
         font-size: 24px;
     }
     /* --------------- /Microgreens 101 --------------- */
+
+    /* --------------- Recipe Page --------------- */
+    .recipeType {
+        padding: 0px !important;
+    }
+
+    .recipeImage {
+        width: 300px;
+        margin: 0px auto;
+    }
+    /* --------------- /Recipe Page --------------- */
 }
 
 @media only screen and (max-width: 375px) {
@@ -579,6 +596,12 @@ label {
         font-size: 12px;
     }
     /* --------------- /Microgreens 101 --------------- */
+
+    /* --------------- Recipe Page --------------- */
+    .recipeDropdown {
+        font-size: 15px;
+    }
+    /* --------------- /Recipe Page --------------- */
 }
 
 @media only screen and (max-width: 320px) and (min-width: 320px) {
