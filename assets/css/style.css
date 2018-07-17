@@ -103,7 +103,7 @@ ul {
 /* Newsletter */
 #newsletter {
     text-align: center;
-    background-color: rgb(188, 35, 235);
+    background-color: rgb(134, 82, 197);
     color: white;
     min-height: 150px;
     padding: 10px;
@@ -159,7 +159,7 @@ label {
 
 /* Koenig and Hill */
 .koenigHill {
-    background-color: rgb(188, 35, 235);
+    background-color: rgb(134, 82, 197);
     color: white;
     text-align: center;
     cursor: pointer;
