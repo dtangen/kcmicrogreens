@@ -5,7 +5,7 @@ ul {
 
 
 /* Icon Bar */
-.icon-bar {
+/* .icon-bar {
     position: fixed;
     top: 50%;
     right: 0%;
@@ -13,20 +13,20 @@ ul {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 999;
-  }
+  } */
   
   /* Icon Bar Links */
-.icon-bar a {
+/* .icon-bar a {
     display: block;
     text-align: center;
     padding: 16px;
     transition: all 0.3s ease;
     color: white;
     font-size: 20px;
-}
+} */
   
   /* Icon Bar Colors*/
-.icon-bar a:hover {
+/* .icon-bar a:hover {
     background-color: #000;
 }
   
@@ -43,7 +43,7 @@ ul {
 .instagram {
     background: #007bb5;
     color: white;
-}
+} */
 
 /* Empty Space */
 .emptySpace {
@@ -57,104 +57,160 @@ ul {
 /* --------------- /General --------------- */
 
 /* --------------- Main Page --------------- */
-/* Carousel */
-.carousel-inner {
-    height: 500px;
-    border: solid 10px white;
+/* General */
+body {
+    background: #FDFC47;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, rgb(86, 160, 26), rgb(245, 244, 200));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, rgb(86, 160, 26), rgb(245, 244, 200)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.carousel-caption {
-    top: 350px;
-}
-
-.slideHeader {
-    text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-        1px 1px 0 #000;
+.navbar {
+    background-color: rgb(86, 160, 26);
     color: white;
-    font-size: 28px;
 }
 
-.slideInfo {
-    text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+ul {
+    list-style-type: none;
 }
 
-/* Card */
-.card {
-    padding: 10px;
-    margin: 0px 30px;
+.carousel {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    padding: none;
+    /* border: solid 10px white; */
+}
+
+.carousel-image {
+    width: 100%;
+    height: 700px;
+    overflow: auto;;
+}
+
+.carousel-overlay {
+    width: 100%;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    text-align:  center;
+    background-color: rgb(134, 82, 197);
+    background:  rgba(134, 82, 197, 0.5);
+}
+
+.card-container {
+    margin: 20px 0px;
+    /* height: 650px; */
+}
+
+.home-card {
+    width: 32%;
+    height: auto;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: solid 5px white;
 }
 
 .card-img-top {
+    height: 100%;
+}
+
+.card-text {
+    height: auto;
+    min-height:  100px;
+}
+
+.btn {
+    font-weight: bold;
+    width: 150px;
+    background-color: rgb(86, 160, 26);
+    color: white;
+}
+
+.buy-header {
+    border-bottom: dashed 2px black;
+    margin-bottom: 0px;
+}
+
+.buy-container {
+    width: 100%;
+    min-height:  50px;
+    text-align: center;
+}
+
+.buy-row {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+    text-align: center;
     height: 300px;
 }
 
-/* About Us */
-.about {
-    margin: 20px;
+.purchase-options {
+    text-align: center;
+    width: 50%;
+    height: 100%;
 }
 
-/* Newsletter */
-#newsletter {
+.purchase-options h2 {
+   width: 100%;
+}
+
+.newsletter-container {
+    margin: auto;
     text-align: center;
     background-color: rgb(134, 82, 197);
     color: white;
-    min-height: 150px;
     padding: 10px;
+    height: 300px;
 }
 
-.newsletterHeader {
-    margin: 10px;
-    padding: 5px;
+.newsletter-header {
+    width: 100%;
 }
 
-/* Newsletter Modal */
-label {
-    width: 125px;
+.contact-container {
+    width: 100%;
+    min-height:  50px;
+    text-align: center;
 }
 
-.labelModal {
-    width: 400px;
+.follow-us {
+    border-bottom: solid 2px black;
 }
 
-.modalCheckbox {
-    width: 150px;
+.contact-list-social {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
 }
 
-/* Map Selectors */
-.selectors {
-    width: 600px;
-}
-
-.mapSelectors li {
-    display: inline-block;
-}
-
-#opMap {
-    font-weight: bold;
-}
-
-#lenMap {
-    font-weight: bold;
-}
-
-/* Google Maps */
-.map {
-    margin: 10px;
-    left: 50%;
-}
+.contact-list-social i {
+    color: rgb(134, 82, 197);
+    font-size: 5em;
+    padding: 8px;
+  }
 /* --------------- /Main Page --------------- */
 
 /* --------------- Product Page --------------- */
 /* Product Card */
 .product {
     margin: 20px;
+}
+
+.product-card {
+    padding: 10px;
+    margin: 0px 30px;
+}
+
+.product-card-img-top {
+    height: 300px;
 }
 
 /* Koenig and Hill */
