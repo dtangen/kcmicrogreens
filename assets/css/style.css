@@ -453,6 +453,39 @@ ul {
     width: 50%;
     height: 900px;
     color: white;
+    border: solid 2px white;
+    cursor: pointer;
+}
+
+#living {
+    background-image: url("backgroundImages/goldenacrecabbagemicrogreens-300x300.jpg");
+}
+
+#wholesale {
+    background-image: url("backgroundImages/goldenacrecabbagemicrogreens-300x300.jpg");
+}
+
+.variety-row {
+    padding: 10px;
+}
+
+#green-varieties {
+    width: 30%;
+    margin: 5px;
+}
+
+#variety-image {
+    height: 400px;
+}
+
+#switch {
+    color: white;
+}
+
+#switch-categories {
+    margin: 10px;
+    cursor: pointer;
+    width: 35%;
 }
 /* --------------- Varieties Page --------------- */
 
