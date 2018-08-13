@@ -448,6 +448,14 @@ ul {
 }
 /* --------------- /Chefs Page --------------- */
 
+/* --------------- Varieties Page --------------- */
+.green-category {
+    width: 50%;
+    height: 900px;
+    color: white;
+}
+/* --------------- Varieties Page --------------- */
+
 /* -------------------- Resizing -------------------- */
 @media only screen and (max-width: 1024px) {
 
