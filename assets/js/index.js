@@ -55,9 +55,11 @@ $(document).ready(function() {
   });
 
   $("#varieties").hide();
+  
 
   $("#living").click(function() {
     $("#varieties").show();
     $("#varieties-categories").hide();
+    $("#switch-container").css("visibility", "visible");
   });
 });

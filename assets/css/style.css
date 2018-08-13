@@ -472,17 +472,19 @@ ul {
 #green-varieties {
     width: 30%;
     margin: 5px;
+    height: 480px;
 }
 
 #variety-image {
     height: 400px;
 }
 
-#switch {
+#switch-container {
     color: white;
+    visibility: hidden;
 }
 
-#switch-categories {
+.switch-categories {
     margin: 10px;
     cursor: pointer;
     width: 35%;
