@@ -55,6 +55,7 @@ $(document).ready(function() {
   });
 
   $("#varieties").hide();
+  $("#wholesale-container").hide();
   
 
   $("#living").click(function() {
@@ -62,4 +63,22 @@ $(document).ready(function() {
     $("#varieties-categories").hide();
     $("#switch-container").css("visibility", "visible");
   });
+
+  $("#wholesale").click(function() {
+    $("#wholesale-container").show();
+    $("#varieties-categories").hide();
+    $("#switch-container").css("visibility", "visible");
+  });
+
+  $("#switch-varieties").click(function() {
+    $("#wholesale-container").hide();
+    $("#varieties").show();
+  })
+
+  $("#switch-wholesale").click(function() {
+    $("#wholesale-container").show();
+    $("#varieties").hide();
+  })
+
+
 });
