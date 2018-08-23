@@ -60,8 +60,8 @@ $(document).ready(function() {
     $("#knowMicrogreens").hide();
     $("#harvestWash").hide();
     $("#useThem").hide();
-    $("#vegetables").show();
-    $("#sprouts").hide();
+    $("#sprouts").show();
+    $("#vegetables").hide();
   });
 
   //Show info on fifth slide
@@ -69,8 +69,8 @@ $(document).ready(function() {
     $("#knowMicrogreens").hide();
     $("#harvestWash").hide();
     $("#useThem").hide();
-    $("#vegetables").hide();
-    $("#sprouts").show();
+    $("#sprouts").hide();
+    $("#vegetables").show();
   });
 
   //Product page jumbotron
