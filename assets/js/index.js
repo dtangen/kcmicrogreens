@@ -25,12 +25,16 @@ $(document).ready(function() {
   //Microgreens 101 Page
   $("#harvestWash").hide();
   $("#useThem").hide();
+  $("#vegetables").hide();
+  $("#sprouts").hide();
 
   //Show info for first slide
   $("#firstSlide").on("click", function() {
     $("#knowMicrogreens").show();
     $("#harvestWash").hide();
     $("#useThem").hide();
+    $("#vegetables").hide();
+    $("#sprouts").hide();
   });
 
   //Show info for second slide
@@ -38,6 +42,8 @@ $(document).ready(function() {
     $("#knowMicrogreens").hide();
     $("#harvestWash").show();
     $("#useThem").hide();
+    $("#vegetables").hide();
+    $("#sprouts").hide();
   });
 
   //Show info for third slide
@@ -45,6 +51,26 @@ $(document).ready(function() {
     $("#knowMicrogreens").hide();
     $("#harvestWash").hide();
     $("#useThem").show();
+    $("#vegetables").hide();
+    $("#sprouts").hide();
+  });
+
+  //Show info on fourth slide
+  $("#fourthSlide").on("click", function() {
+    $("#knowMicrogreens").hide();
+    $("#harvestWash").hide();
+    $("#useThem").hide();
+    $("#vegetables").show();
+    $("#sprouts").hide();
+  });
+
+  //Show info on fifth slide
+  $("#fifthSlide").on("click", function() {
+    $("#knowMicrogreens").hide();
+    $("#harvestWash").hide();
+    $("#useThem").hide();
+    $("#vegetables").hide();
+    $("#sprouts").show();
   });
 
   //Product page jumbotron
@@ -56,7 +82,6 @@ $(document).ready(function() {
 
   $("#varieties").hide();
   $("#wholesale-container").hide();
-  
 
   $("#living").click(function() {
     $("#varieties").show();
@@ -73,12 +98,10 @@ $(document).ready(function() {
   $("#switch-varieties").click(function() {
     $("#wholesale-container").hide();
     $("#varieties").show();
-  })
+  });
 
   $("#switch-wholesale").click(function() {
     $("#wholesale-container").show();
     $("#varieties").hide();
-  })
-
-
+  });
 });
