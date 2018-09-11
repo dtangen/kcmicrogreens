@@ -80,9 +80,6 @@ $(document).ready(function() {
     return false;
   });
 
-  $("#varieties").hide();
-  $("#wholesale-container").hide();
-
   $("#living").click(function() {
     $("#varieties").show();
     $("#varieties-categories").hide();
