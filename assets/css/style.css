@@ -436,6 +436,22 @@ ul {
     url("backgroundImages/microgreens.jpg");
 }
 
+.chef-banner-link {
+  text-decoration: none;
+}
+
+.chef-banner-link:hover {
+  text-decoration: none;
+}
+
+.chef-banner {
+ height: 100px;
+ margin: 0px 0px 10px 0px;
+ background-color: rgb(134, 82, 197);
+  color: white;
+  text-align: center;
+}
+
 .microgreenQuestion {
   font-size:  42px;
   text-align: center;
@@ -514,6 +530,44 @@ ul {
 /* --------------- /Chefs Page --------------- */
 
 /* --------------- Varieties Page --------------- */
+.info {
+  position: relative;
+  display: inline-block;
+}
+
+.info .tooltip-text {
+  visibility: hidden;
+  width: 100%;
+  height: 50%;
+  background-color: rgb(134, 82, 197);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  opacity: 0.6;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+}
+
+.info:hover .tooltip-text{
+  visibility: visible;
+}
+
+/* .info .tooltip-text::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  right: 100%; /* To the left of the tooltip */
+  /* margin-top: -25px;
+  border-width: 25px;
+  border-style: solid;
+  border-color: transparent #4aaaa5 transparent transparent;
+} */ 
+
 .green-category {
   width: 50%;
   height: 900px;
