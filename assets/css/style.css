@@ -108,6 +108,10 @@ ul {
   background: rgba(134, 82, 197, 0.5);
 }
 
+.carousel-text {
+  font-size: 24px;
+}
+
 .card-container {
   margin: 20px 0px;
   /* height: 650px; */
