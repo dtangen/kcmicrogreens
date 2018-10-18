@@ -76,6 +76,11 @@ body {
   color: white;
 }
 
+.homegrown {
+  height: 56px;
+  width: 56px;
+}
+
 ul {
   list-style-type: none;
 }
